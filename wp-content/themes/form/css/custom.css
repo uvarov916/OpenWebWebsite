@@ -1,0 +1,162 @@
+.comment-author {
+	padding: 0;
+}
+
+.comment-reply-link {
+	display: inline-block;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+
+.comment .fn {
+	display: inline;
+	margin: 0 10px 0 0;
+}
+
+.comment-meta {
+	margin-top: 10px;
+}
+
+.comment-form-comment > div,
+.comment-form-comment > div > textarea {
+	max-width: 100%;
+}
+
+.post-pagination{
+	margin-left:0;
+	margin-right:0;
+}
+
+/*.post-pagination .pagination{
+  margin-top:15px;
+}*/
+
+
+.pagination span.current, .pagination a {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: transparent;
+  border:1px solid #2db4d8;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #2db4d8;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all .3s ease;
+
+}
+
+.pagination span.current,
+.pagination span.current:hover, 
+.pagination a:hover {
+  background: #2db4d8;
+  border-color:#2db4d8;
+  color:#fff;
+  text-decoration: none;
+}
+
+.pagination .page-info {  
+  background: none;
+  padding-left: 0px;
+  /*font-size:13px;*/
+  color:#888;
+  margin-right:20px;
+}
+
+.pagination .page-info:hover {
+  background: none;
+}
+
+.pagination .current {
+  background: #D95C5D;
+  color:#fff;
+}
+
+.pagination span.current:hover{
+  cursor:default;
+}
+
+.page-links{
+  margin-top:15px;
+}
+
+.post .pager{
+  margin-top:30px;
+  clear:both;
+  overflow:hidden;
+}
+
+.post .pager .previous{
+  float:left;
+}
+
+.post .pager .next{
+  float:right;
+}
+
+.post .pager .disabled a,
+.post .pager .disabled a:hover{
+  color:#ddd;
+  cursor:default;
+  text-decoration: none;
+}
+
+.portfolio-block .post-pagination > .span12{
+  display:inline-block;
+  left:50%;
+  position:relative;
+}
+
+.portfolio-block .post-pagination .pagination{
+  display:inline-block;
+  position:relative;
+  left:-50%;
+  margin:20px 0;
+}
+
+body.single-gallery section.portfolio-block{
+  margin:80px 0;
+}
+
+@media (max-width:768px) {
+
+	.comment .children {
+		margin-left: 25px;
+	}
+
+}
+
+.notification-wrap {
+  margin-top: 25px;
+  display: none;
+}
+
+.form-click {
+  float: none;
+}
+
+.project-image img {
+  display: block;
+  margin: 0 auto;
+}
+
+.image-absolute {
+  text-align: right;
+  top: 0;
+}
+
+.image-absolute img {
+  max-height: 100%;
+}
+
+@media (max-width: 767px) {
+  .image-absolute {
+    text-align: center;
+  }
+}
+
+.YTPOverlay {
+  background: #000;
+  opacity: 0.7;
+}
