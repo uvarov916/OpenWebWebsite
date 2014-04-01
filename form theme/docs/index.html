@@ -1,0 +1,726 @@
+<!DOCTYPE HTML>
+
+    <head>      
+		<meta charset="utf-8">
+		<title>Form - Responsive WordPress Theme Documentation - pixelentity</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/syntax.css" />
+		<link rel="stylesheet" href="css/docs_style.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.pixelentity.hotspot.js"></script>
+		<script type="text/javascript" src="js/docs.js"></script>
+	</head>
+	
+    <body>
+	
+		<!--header section-->
+		<div class="header">
+			
+			<!--logo-->
+			<a href="http://pixelentity.com" class="logo"><img src="img/logo.png" alt="logo" /></a>
+			
+			<!--introduction text-->
+			<div class="intro">				
+				<p>Hi there and thank you for buying a premium digital product from Pixelentity. In order to get the most out of your purchase, please make sure to carefully read all of the information contained in this page. Use the table of contents at the top of this page to jump to a relevant section.</p>
+			</div>
+			<!--end introduction text-->
+			
+			<span class="title">Form - Responsive WordPress Theme</span>
+			
+		</div>
+		
+		<!--end header section-->
+		<div class="toc" id="toc">
+			<h1>TABLE OF CONTENTS</h1>
+			<!-- toc -->
+<a class="section" href="#sec1_0"><span>1</span> Getting Started</a><a class="subsection" href="#sec1_1"><span>1.1</span>Download Package Contents</a><a class="subsection" href="#sec1_2"><span>1.2</span>Installing Your Theme</a><a class="subsection" href="#sec1_3"><span>1.3</span>Theme Installation Errors</a><a class="section" href="#sec2_0"><span>2</span> Theme Setup</a><a class="subsection" href="#sec2_1"><span>2.1</span>Importing Demo Content</a><a class="section" href="#sec3_0"><span>3</span> Theme Structure - How It Works</a><a class="section" href="#sec4_0"><span>4</span> Custom Thumb Cropping</a><a class="section" href="#sec5_0"><span>5</span> Creating Posts</a><a class="subsection" href="#sec5_1"><span>5.1</span>Common Options</a><a class="subsection" href="#sec5_2"><span>5.2</span>Custom Metaboxes</a><a class="subsection" href="#sec5_3"><span>5.3</span>Post Format: Standard</a><a class="subsection" href="#sec5_4"><span>5.4</span>Post Format: Video</a><a class="subsection" href="#sec5_5"><span>5.5</span>Post Format: Gallery</a><a class="section" href="#sec6_0"><span>6</span> Creating a Gallery</a><a class="subsection" href="#sec6_1"><span>6.1</span>Direct Upload Gallery</a><a class="subsection" href="#sec6_2"><span>6.2</span>Gallery Image Display Options</a><a class="subsection" href="#sec6_3"><span>6.3</span>Media Tags</a><a class="subsection" href="#sec6_4"><span>6.4</span>Media Tags Gallery</a><a class="section" href="#sec7_0"><span>7</span> Creating a Video</a><a class="section" href="#sec8_0"><span>8</span> Creating a Project</a><a class="subsection" href="#sec8_1"><span>8.1</span>Common Options</a><a class="subsection" href="#sec8_2"><span>8.2</span>Project Format: Standard</a><a class="subsection" href="#sec8_3"><span>8.3</span>Project Format: Video</a><a class="subsection" href="#sec8_4"><span>8.4</span>Project Format: Gallery</a><a class="section" href="#sec9_0"><span>9</span> Creating Pages</a><a class="subsection" href="#sec9_1"><span>9.1</span>Page template: Common Options</a><a class="subsection" href="#sec9_2"><span>9.2</span>Page template: Default Template</a><a class="section" href="#sec10_0"><span>10</span> Content Builder</a><a class="subsection" href="#sec10_1"><span>10.1</span>Services Block</a><a class="subsection" href="#sec10_2"><span>10.2</span>Blog Block</a><a class="subsection" href="#sec10_3"><span>10.3</span>Columns Block</a><a class="subsection" href="#sec10_4"><span>10.4</span>Portfolio Block</a><a class="subsection" href="#sec10_5"><span>10.5</span>Numbers Block</a><a class="subsection" href="#sec10_6"><span>10.6</span>Contact Block</a><a class="subsection" href="#sec10_7"><span>10.7</span>Recent Work Block</a><a class="subsection" href="#sec10_8"><span>10.8</span>Testimonials</a><a class="subsection" href="#sec10_9"><span>10.9</span>Team Block</a><a class="section" href="#sec11_0"><span>11</span> Theme Options</a><a class="subsection" href="#sec11_1"><span>11.1</span>General Options</a><a class="subsection" href="#sec11_2"><span>11.2</span>Color Options</a><a class="subsection" href="#sec11_3"><span>11.3</span>Font Options</a><a class="subsection" href="#sec11_4"><span>11.4</span>Footer Options</a><a class="subsection" href="#sec11_5"><span>11.5</span>Contact Form Options</a><a class="subsection" href="#sec11_6"><span>11.6</span>Widget Areas Options</a><a class="subsection" href="#sec11_7"><span>11.7</span>Advanced Options</a><a class="subsection" href="#sec11_8"><span>11.8</span>Branding Options (Hidden)</a><a class="section" href="#sec12_0"><span>12</span> Widgetized Areas &amp; Inserting Widgets</a><a class="subsection" href="#sec12_1"><span>12.1</span>Creating A Widgetized Area</a><a class="subsection" href="#sec12_2"><span>12.2</span>Inserting Widgets</a><a class="subsection" href="#sec12_3"><span>12.3</span>Placing Your widgetized Area Into The Theme</a><a class="section" href="#sec13_0"><span>13</span> The Main Menu</a><a class="subsection" href="#sec13_1"><span>13.1</span>Creating A Menu</a><a class="subsection" href="#sec13_2"><span>13.2</span>Adding The Menu To the Theme</a><a class="section" href="#sec14_0"><span>14</span> Shortcodes</a><a class="subsection" href="#sec14_1"><span>14.1</span>Shortcode - Button</a><a class="subsection" href="#sec14_2"><span>14.2</span>Shortcode - Columns</a><a class="subsection" href="#sec14_3"><span>14.3</span>Shortcode - Video</a><a class="section" href="#sec15_0"><span>15</span> Fonts</a><a class="section" href="#sec16_0"><span>16</span> Theme Translation</a><a class="subsection" href="#sec16_1"><span>16.1</span>Translation Using POT File</a><a class="subsection" href="#sec16_2"><span>16.2</span>Modifying The theme&#39;s CSS</a><a class="section" href="#sec17_0"><span>17</span> Javascript</a><a class="subsection" href="#sec17_1"><span>17.1</span>Adding Custom Javascript</a><a class="section" href="#sec18_0"><span>18</span> Rebranding the Custom Admin Panel</a><a class="section" href="#sec19_0"><span>19</span> Updates</a>		</div>
+		
+		<!-- docs -->		
+<div class="bbcode-body">
+<br/>
+<h1><a name="sec1_0">1</a> Getting Started<a class="top" href="#toc">top</a></h1>
+<h2><a name="sec1_1">1.1</a> Download Package Contents</h2>
+<br/>
+Once you have downloaded and unzipped the Form package you will be faced with a list of files and folders. An explanation of these is as follows. Any item not mentioned here should be ignored for the moment.<br/>
+<br>
+<b>Folders</b>
+<br/>
+<table><tr><td class="option">Form.theme.zip</td><td class="value">This is a zip archive of the theme. This is used for installation method 2 (see below)<td></tr><tr><td class="option">docs</td><td class="value">This is the help documentation. To view simply open <i>index.html</i> found inside this folder<td></tr></table>
+<h2><a name="sec1_2">1.2</a> Installing Your Theme</h2>
+<br/>
+Once you have downloaded the Form package from Themeforest.net, there are 2 ways of installing this theme. These are as follows:<br/>
+<br>
+<b>METHOD 1</b>
+<br/>
+<ol style="list-style-type: decimal">
+	<li>Unzip the download package using Winzip or equivalent.<br/>
+	</li>
+	<li>You will see another zip archive file inside called <b>Form.theme.zip</b>, unzip this file also using Winzip or equivalent software and using an FTP client (eg. Filezilla), upload its contents to your WordPress installation. You will need to place the folder into the following location:  <i>wp-content/themes</i>
+	</li>
+	<li>Now inside your WordPress admin area, go to <i>Appearance &gt; Themes</i> and there you will see the Form Theme.<br/>
+	</li>
+	<li>Click <i>Activate</i> to activate the theme. If you do not see the theme in this screen, you have done something incorrectly. Review the last few steps again.</li>
+</ol>
+<b>METHOD 2</b>
+<br/>
+<ol style="list-style-type: decimal">
+	<li>Unzip the Form download package. Once unzipped you will see a zip file named <b>Form.theme.zip</b>, this is a compressed version of the theme.<br/>
+	</li>
+	<li>Now inside your WordPress admin area, go to <i>Appearance &gt; Themes &gt; Install Themes (tab) &gt; Upload</i>
+	</li>
+	<li>Click browse and locate this <b>Form.theme.zip</b> file and upload it<br/>
+	</li>
+	<li>Now you will see the Form theme in the <i>Manage Themes</i> tab.<br/>
+	</li>
+	<li>Click <i>Activate</i> to activate the theme. If you do not see the theme in this screen, you have done something incorrectly. Review the last few steps again.</li>
+</ol>
+<b>Installation Video</b>
+<br/>
+Here is a link to an video showing the installation of the theme and the importing of demo content: <a href="http://www.youtube.com/watch?v=heHlFAb0x_4" rel="nofollow">INSTALLATION VIDEO</a><div class="note"><b>Congratulations you have now successfully installed the Form Theme</b></div>
+<h2><a name="sec1_3">1.3</a> Theme Installation Errors</h2>
+<br/>
+<div class="alert">Do not upload the Themeforest download package directly to your WordPress site, because this will lead to errors. Make sure to Unzip this package and inside you will find the theme zip archive: <b>Form.theme.zip</b>. This is what you will need to upload to your WordPress installation</div>
+<br/>
+<b>If you upload / Install the Form theme and you get one of the following errors, then you have forgotten to unzip the download package.</b>
+<br/>
+<ol style="list-style-type: decimal">
+	<li>This theme is invalid<br/>
+	</li>
+	<li>This theme is missing a style.css</li>
+</ol>
+<br/>
+<h1><a name="sec2_0">2</a> Theme Setup<a class="top" href="#toc">top</a></h1>Before you start using the Form theme, a few setup steps are required. This section will walk you through these steps.<br/>
+<br>
+<br/>
+<br>
+<h2><a name="sec2_1">2.1</a> Importing Demo Content</h2>
+<br/>
+Some buyers like to install their theme and have it look exactly like the Themeforest preview site. If this is something you would like to do, then follow the steps in this section. This step is optional so feel free to skip it. The subsequent sections will provide all the instructions you need to insert your own content manually.<div class="note">The dummy content inserted in this step will not contain the beautiful images seen in the Themeforest.net demo. These images cannot be included because they are commercial images, which we have purchased for theme demonstration only and we do not have a redistribution license for these assets.</div><b>To Import Demo Content</b><div class="note">Make sure to install and activate the Form theme before importing any demo content.</div><img src="shots/Import Demo Content.png" alt="[Import%20Demo%20Content.png]" title="" /> 
+<br/>
+<ol style="list-style-type: decimal">
+	<li>Install and activate the Form theme. (See section above)<br/>
+	</li>
+	<li>Go to the Form theme options <i>Appearance &gt; Theme Options</i>
+	</li>
+	<li>The <b>General</b> tab should be open by default, but if not click it to show the general options.<br/>
+	</li>
+	<li>The very first section in the <b>General</b> is the demo Content import section.<br/>
+	</li>
+	<li>Click the large green <i>Import Demo Content</i> button once only.<br/>
+	</li>
+	<li>The theme will now import our demo content into you site. A progress bar will inform you of the import processes progress.<br/>
+	</li>
+	<li>This importer will basically import posts, pages, comments, custom fields, categories, tags, sidebars, widgets, menus and all configuration from our preview content export file.</li>
+</ol>
+<div class="note">Please note that dummy images will be used instead of the premium image assets we have used in our online preview.</div><div class="alert"><b>Alert 2</b> If you already have content in your site, you will be asked to confirm the import, but if your site is a fresh installation of WordPress, there will be no confirmation request. Importing demo content will not overwrite existing content such as posts or pages, but it will replace all sidebar and widget configuration. So please be aware of this before you decide to do this process.</div>
+<h1><a name="sec3_0">3</a> Theme Structure - How It Works<a class="top" href="#toc">top</a></h1>The Form theme is essentially a multi-page theme with each of its pages being made up of one or mode sections. These sections are inserted, arranged and filled with content vis the &quot;Content Builder&quot; page template. To construct these pages you need to follow these steps:<br/>
+<br>
+<ol style="list-style-type: decimal">
+	<li>Create a page using the &quot;Pages&quot; main WP menu item.<br/>
+	</li>
+	<li>In the page attributes box on the right hand side, select the &quot;Content Builder&quot; page template.<br/>
+	</li>
+	<li>The WP editor will disappear and be replaced with the visual content builder. 
+	</li>
+	<li>Click &quot;Add Block&quot; to open the list of all possible modules.<br/>
+	</li>
+	<li>Select which one you wish to add and fill out all of its fields/options.<br/>
+	</li>
+	<li>More blocks can be added to the layout in the same way. See the Content Builder section for an explanation of all blocks and their associated options.<br/>
+	</li>
+	<li>Finally publish the page.</li>
+</ol>
+<br/>
+<h1><a name="sec4_0">4</a> Custom Thumb Cropping<a class="top" href="#toc">top</a></h1><img src="shots/thumbnail.crop.png" alt="[thumbnail.crop.png]" title="" />
+<br/>
+The Form theme contains a custom thumbnail cropping feature. This feature is most useful if you want to control how your large images are cropped when they are for example shown in your portfolio grid. With this feature you can control exactly how the thumbnails are created from your larger images.<br/>
+To use this feature go to: <b>Media &gt; Library</b> in the main WordPress menu. Now select any image from the library, an image used in your projects would be most suitable. On the main attachment page, scroll down until you see the dialog box entitled: &quot;Thumbnails&quot;. To define a custom crop for a thumbnail, do the following:<br/>
+<br>
+<ol style="list-style-type: decimal">
+	<li>This dialog will contain all of the thumbnail version of this attachment which have been auto-generated by the theme for use in those areas you have inserted this image. If this image features in many areas of the theme, or has done at some stage, but was replaced, this dialog may contain numerous thumbnails. 
+	</li>
+	<li>Find the thumbnail which corresponds with the size of the thumbnail in your portfolio page (which you wish to re-crop). You may need to check the size of that image in your portfolio grid page. You can do this with an element inspector which is built into most modern browsers. Use it by right clicking once you are hovering the image, then select &quot;Inspect Element&quot; from the context menu. Now you should be able to find the image size in the panels which appear.<br/>
+	</li>
+	<li>Once you have found the thumb you are looking for, click it in the dialog. This will open the thumb cropping control, hiding all other thumbs in the process.<br/>
+	</li>
+	<li>With your mouse you can now resize and reposition the cropping frame in the window on the left. Once the position has changed you will see a preview of the resulting thumbnail in the window on the right.<br/>
+	</li>
+	<li>When you have found a suitable crop for this thumbnail, click the &quot;Save&quot; button. The crop control will close and the other thumbs will reappear. 
+	</li>
+	<li>Now refresh your portfolio grid page to view the updated thumbnail. Remember to clear your browser cache, otherwise the updated thumbnail may not appear.</li>
+</ol>
+<div class="note">Once thumb cropping has been altered, the browser cache should be cleared before viewing the page which contains the updated thumbnail.</div>
+<h1><a name="sec5_0">5</a> Creating Posts<a class="top" href="#toc">top</a></h1>The Form theme contains 3 different post formats - Standard, Video and Gallery.<br/>
+<br>
+<br/>
+<h2><a name="sec5_1">5.1</a> Common Options</h2>
+<br/>
+The following option is common to all post types.<br/>
+<table><tr><td class="option">Background Image</td><td class="value">Enter the image here which will appear in the full width header area on the single post page.<td></tr><tr><td class="option">Alternate Splash</td><td class="value">By default the full width splash area on each page automatically get the title of the page in large white writing. If you would like to enter a custom message into this area, you can set this option to YES and the following options will appear below.<td></tr><tr><td class="option">Splash Title</td><td class="value">This will be an alternate title (large text)<td></tr><tr><td class="option">Splash Subtitle</td><td class="value">This will be a subtitle (small text) displayed above the splash title.<td></tr><tr><td class="option">Button URL</td><td class="value">An optional button can be displayed in this section also. The destination URL for this button would be entered here. Leave empty to hide the button.<td></tr><tr><td class="option">Button Text</td><td class="value">This would be the text label for the button.<td></tr><tr><td class="option">Open in a new window</td><td class="value">This options determines if, when the button is clicked, its destination url opens in a new window/tab or in the current window/tab.<td></tr></table>
+<h2><a name="sec5_2">5.2</a> Custom Metaboxes</h2>
+<br/>
+Form supports several post formats, some of them like <i>Video</i> or <i>Gallery</i> require additional configuration parameters which can be set in the Metabox Area, under the post/page content editor. Each time a Post Format is selected, the page updates and only the Metaboxes relevant to the current selections will be shown.<br/>
+<br>
+<br/>
+<br>
+<h2><a name="sec5_3">5.3</a> Post Format: Standard</h2>
+<br/>
+This format accepts an optional featured image. To insert this featured image do the following:<br/>
+<br>
+<ol style="list-style-type: decimal">
+	<li>In the Featured Image box, click <i>Set featured Image</i>
+	</li>
+	<li>This will open the WP media loader. Select the image you wish to use for the featured image. The resolution should be large, minimum of 1000px wide and the pixelentity framework will auto-generate the size required for the post. ( The image should be optimized for web and devices and should have a file size generally less that 300kb. The smaller the file size the better, as long as the image quality is not compromised. )<br/>
+	</li>
+	<li>Once the image is loaded ensure the <i>original size</i> is selected and click the <i>Set as Featured Image</i> button.<br/>
+	</li>
+	<li> Close the media uploader window and publish your post.</li>
+</ol>
+<br/>
+<h2><a name="sec5_4">5.4</a> Post Format: Video</h2>
+<br/>
+This format accepts a custom video post type as its media content. To insert this video do the following:<br/>
+<br>
+<br/>
+<ol style="list-style-type: decimal">
+	<li>Scroll down the page to the <i>Video Options</i> Metabox. There you will find a drop menu containing the list of all the custom video post types which have been created.<br/>
+	</li>
+	<li>Select the video you wish to feature in this post.<br/>
+	</li>
+	<li>You can also add a featured image to this post. If one is added it will become the cover image for the video item. If no featured image is entered, the video item will attempt to load its default cover image generated by YouTube or Vimeo, depending on which service you are using. 
+	</li>
+	<li> Now publish the post.</li>
+</ol>
+<div class="note">It should be noted that if  you are using the auto cover image fetching method. The theme will only be able to fetch this image is the original video uploader has permitted it. This is usually permitted by default except for videos marked &quot;private&quot;. If the video is private, no image will be loaded.</div><div class="alert">In order for a video to appear in the list, it first needs to be created. See the section on <b>Creating A Video</b> for more information.</div>
+<br/>
+<br>
+<br/>
+<br>
+<h2><a name="sec5_5">5.5</a> Post Format: Gallery</h2>
+<br/>
+This format accepts a custom gallery post type as its media content. To insert this gallery do the following:<br/>
+<br>
+<ol style="list-style-type: decimal">
+	<li>Scroll down the page to the <i>Gallery</i> box. There you will find a drop menu containing the list of all the custom gallery post types which have been created.<br/>
+	</li>
+	<li>Select the gallery you wish to feature in this post.<br/>
+	</li>
+	<li>Underneath the list of galleries you can specify the width and height of the desired gallery. These values may mean that your images will be cropped in order to achieve the entered dimensions. The extend of the cropping depends on the image&#39;s original aspect ratio. To avoid cropping of the images leave these fields blank and the gallery will be sized to fit its content / container.</li>
+</ol>
+<div class="alert">In order for a gallery to appear in the list, it first needs to be created. See the section on <b>Creating A Gallery</b> for more information.</div><div class="note">In this theme all gallery posts will display their content as a slider.</div>
+<h1><a name="sec6_0">6</a> Creating a Gallery<a class="top" href="#toc">top</a></h1>The Form theme features a Gallery custom post type. This can be found in the main WP admin menu <i>Galleries</i>. All gallery type posts and portfolio items will need to have their gallery content created first using this custom post type. Once it has been created here it will be available to be inserted into those areas.<br/>
+<br>
+<br/>
+<br>
+<h2><a name="sec6_1">6.1</a> Direct Upload Gallery</h2>
+<br/>
+This type of gallery is most suited for when the images you want to display are not already uploaded to your WordPress installation, it will present you with a big &quot;Drop Files Here&quot; area into which you can just drag and drop images from your hard drive. The gallery will take care of everything and, once the upload process is done, you can just save/publish. The image order can be manually altered by dragging thumbs to suit your needs.<br/>
+<br>
+<b>To create a Direct Upload Gallery do the following:</b>
+<ol style="list-style-type: decimal">
+	<li>Select the <i>Galleries</i> item in the main admin menu &amp; select &quot;Add New&quot;.<br/>
+	</li>
+	<li>In the <i>Gallery</i>box, select &quot;Direct upload&quot;.<br/>
+	</li>
+	<li>Drag and drop your images into the <i>Upload Gallery Images</i> section&#39;s drop zone with the dashed outline.<br/>
+	</li>
+	<li>These images will now load and appear below the drop zone in the <i>Gallery Content</i> area as thumbnails.<br/>
+	</li>
+	<li>You may drag these thumbnails to reorganize the sequence of images if this is important.<br/>
+	</li>
+	<li>You may also add an optional featured image to the gallery post. This will be used as the cover for the gallery post in certain configurations.<br/>
+	</li>
+	<li>Now click <i>Publish</i> to publish this gallery post. This type of post is mostly used to provide content for another post or portfolio project. The post may also be viewed in it&#39;s own page however by clicking the <i>View Post</i> button.</li>
+</ol>
+<br/>
+<h2><a name="sec6_2">6.2</a> Gallery Image Display Options</h2>
+<br/>
+The Form theme contains one single display option - Slider. 
+<ol style="list-style-type: decimal">
+	<li><b>Slider:</b> The content of the gallery will be displayed as slider. There are no additional options for this mode.<div class="note">However a gallery single page will display the gallery images in a grid format. When these times are clicked a larger version of the image will open in a popup lightbox viewer. To see the single gallery page, once you have created and published a gallery, click the &quot;view page&quot; button located beside the gallery&#39;s permalink.</div></li>
+</ol>
+<br/>
+<h2><a name="sec6_3">6.3</a> Media Tags</h2>
+<br/>
+The WordPress media library doesn&#39;t allow you to categorize attachments/images in any way besides the upload date. For this reason, in our framework, we have introduced a feature called &quot;Media Tags&quot;. Media Tags work exactly like regular &quot;Tags&quot; do for posts: each image can be assigned one or more tags which can then be used to group similar/related images.The media library admin page has been expanded to allow easy media tags management and image filter by tag.<br/>
+<br>
+<br/>
+<h2><a name="sec6_4">6.4</a> Media Tags Gallery</h2>
+<br/>
+When WordPress media library is already filled with some images, you can categorize them by using media tags. Once you have created one or more media tags, you can use them to create a gallery. Unlike the direct upload case, the gallery will now show a list of all existing media tags: by selecting one (or more) tag from the list (and clicking the refresh button), all the images assigned to those tag will be automatically added to the gallery. Since the same tags can be used in multiple galleries, you don&#39;t need to upload the same image multiple times in order for it to appear in different places. Whenever you assign additional images to a media tag, every galleries making use of these tags will also update its content automatically.<br/>
+<br>
+See a video of this process in action: <a href="http://www.youtube.com/watch?v=B16L2AFOUxE" rel="nofollow">MEDIA TAGS VIDEO</a>
+<br/>
+<br>
+<b>To create a Media Tags Gallery do the following:</b>
+<br/>
+<ol style="list-style-type: decimal">
+	<li>Select the <i>Galleries</i> item in the main admin menu &amp; select &quot;Add New&quot;<br/>
+	</li>
+	<li>In the <i>Gallery Options</i>box select &quot;Media tags (Any)&quot; or &quot;Media Tags (All)&quot;. For an explanation of media tags see the Media Tags section above.<ul>
+			<li><b>Any</b> will includes all the images matching at least one of the selected media tags. 
+			</li>
+			<li><b>All</b> will include all the images matching all the selected media tags.</li>
+		</ul>
+	</li>
+	<li>Select one or more <i>Media Tags</i> from the list<br/>
+	</li>
+	<li>Click <i>Refresh</i> button<br/>
+	</li>
+	<li>These images will now load and appear below the drop zone in the <i>Gallery Content</i> area as thumbnails.<br/>
+	</li>
+	<li>You may drag these thumbnails to reorganize the sequence of images in the Gallery if this is important.<br/>
+	</li>
+	<li>You may also add an optional featured image to the gallery post. This will be used as the cover for the gallery post in certain configurations.<br/>
+	</li>
+	<li>Now click <i>Publish</i> to publish this gallery post. This post will not appear in your website. This type of post is only used to provide content for another post or portfolio project. The post may be viewed in it&#39;s own page however by clicking the <i>View Post</i> button.</li>
+</ol>
+<br/>
+<h1><a name="sec7_0">7</a> Creating a Video<a class="top" href="#toc">top</a></h1>The Form theme features a video custom post type. This can be found in the main WP admin menu <i>Videos</i>. All video type posts and portfolio items will need to have their video content created first using this custom post type. Once it has been created here it will be available to be inserted into those areas.<br/>
+<br>
+<br/>
+<img src="shots/vid.jpg" alt="[vid.jpg]" title="" />
+<br/>
+<br>
+<b>To create a video custom post do the following:</b>
+<br/>
+<ol style="list-style-type: decimal">
+	<li>Select the <i>Videos</i> item in the main admin menu &amp; select &quot;Add New&quot;<br/>
+	</li>
+	<li>In the <i>Video Options</i>box select what type of video you would like to create.The options are <b>Youtube</b> and <b>Vimeo</b>
+	</li>
+	<li>In both video types, you just need to insert the url of the online video into the <i>Video URL</i> field.<br/>
+	</li>
+	<li>Select whether the video will play fullscreen using the &quot;Play Fullscreen&quot; option.<br/>
+	</li>
+	<li>Set the max-width of the video when it is played in fullscreen mode.<br/>
+	</li>
+	<li>Finally, click <i>Publish</i> to publish your video custom post type. This post will not immediately appear in your website. This type of post is normally used to provide content for another post or portfolio project. However the post may be viewed in it&#39;s own page by clicking the <i>View Post</i> button.</li>
+</ol>
+<div class="note">When inserting the video url, make sure the url does not include &quot;https&quot; but should simply be &quot;http&quot;, because this can prevent the video from being loaded correctly. Also make sure that the video&#39;s url is the full url and not some kind of shortened/abbreviated url eg. http://youtu.be/... because this can also stop the video from loading.</div>
+<h1><a name="sec8_0">8</a> Creating a Project<a class="top" href="#toc">top</a></h1>The Form theme features a Project custom post type. This can be found in the main WP admin menu <i>Projects</i>. All portfolio items will need to have their project content created first using this custom post type. Once it has been created here it will be available to be inserted into portfolio pages.<br/>
+<br>
+<br/>
+<b>To create a Project custom post do the following:</b>
+<br/>
+<ol style="list-style-type: decimal">
+	<li>Select the <i>Projects</i> item in the main admin menu &amp; select &quot;Add New&quot;<br/>
+	</li>
+	<li>Give the Project a title<br/>
+	</li>
+	<li>Enter project text content into the WP editor. Here shortcodes are supported, eg. Columns. 
+	</li>
+	<li>Select a format for the project.  The project format determines how the project appears on the single project page and also the expanding project preview area. The options are: <b>Standard</b>, <b>Video</b> and <b>Gallery</b>. See below for an explanation of each of these types and their associated options.<br/>
+	</li>
+	<li>Set the projects Featured Image This will be the image which appears on the portfolio grid thumbnails.</li>
+</ol>
+<br/>
+<h2><a name="sec8_1">8.1</a> Common Options</h2>
+<br/>
+All projects, irrespective of the project format, have some common options. These are as follows:<br/>
+<br>
+<table><tr><td class="option">Background Image</td><td class="value">This is the background image for the full width page header.<td></tr><tr><td class="option">Portfolio Link</td><td class="value">Insert the url of the main portfolio page here. This will be the link used when the thumbnails icon, seen in the single project page header, is clicked by a user, trying to go back to the portfolio main page.<td></tr><tr><td class="option">Open In Lightbox</td><td class="value">Projects may be viewed in a single project page, or in a lightbox, which opens directly above the portfolio grid. This option determines if the lightbox is used.<td></tr><tr><td class="option">Numbers</td><td class="value">Some numbers to describe the project may be entered here. Multiple numbers can be added by clicking the &quot;add number&quot; button and entering a value and description pair. These numbers are organised into a horizontal row. A single row contains 3 numbers. If more then 3 are entered, a second row is started under the first.<td></tr><tr><td class="option">Intro Text</td><td class="value">Enter here some intro text for the features section. Simple html tags are supported here.<td></tr><tr><td class="option">Features</td><td class="value">Add features to the project page. Features are organised into icon, title, description info blocks. These get places into a list under the intro text.<td></tr><tr><td class="option">Features Image</td><td class="value">This is the image which is associated with the features list.<td></tr></table><b>Footer Sections</b>
+<br/>
+Each one of these projects have the following common options related to the single project page to define what section of the footer are shown in this page. These section are setup in the theme options &gt; footer options.<br/>
+<br>
+<table><tr><td class="option">Display Logos</td><td class="value">Choose whether the logos are displayed on this page&#39;s footer.<td></tr><tr><td class="option">Display Call to Action</td><td class="value">Choose whether the call to action section is shown on this page&#39;s footer.<td></tr></table>
+<h2><a name="sec8_2">8.2</a> Project Format: Standard</h2>
+<br/>
+This format is the most simple project type and has no additional options and on the single projects page holds one single image <i>The featured image inserted in the above steps</i>. Therefore you can now publish the project.<br/>
+<br>
+<br/>
+<br>
+<h2><a name="sec8_3">8.3</a> Project Format: Video</h2>
+<br/>
+This format accepts a custom video post type as its media content. To insert this video do the following:<br/>
+<br>
+<img src="shots/bsp_proj_vid.jpg" alt="[bsp_proj_vid.jpg]" title="" />
+<br/>
+<ol style="list-style-type: decimal">
+	<li>Scroll down the page to the <i>Video Options</i> box. There you will find a drop menu containing the list of all the custom video post types which have been created.<br/>
+	</li>
+	<li>Select the video you wish to feature and publish the the project .</li>
+</ol>
+<div class="alert">In order for a video to appear in the list, it first needs to be created. See the section on <b>Creating A Video</b> for more information.</div>
+<br/>
+<br>
+<br/>
+<h2><a name="sec8_4">8.4</a> Project Format: Gallery</h2>
+<br/>
+This format accepts a custom gallery post type as its media content. To insert this content do the following:<br/>
+<br>
+<img src="shots/bsp_proj_gal.jpg" alt="[bsp_proj_gal.jpg]" title="" data-spots="1:415:137" />
+<br/>
+<ol style="list-style-type: decimal">
+	<li>Scroll down the page to the <i>Slider</i> box. There you will find a drop menu containing the list of all the custom gallery post types which have been created.<br/>
+	</li>
+	<li>Select the gallery <div class="hotspot-link">1</div> you wish to feature in this project.</li>
+</ol>
+<div class="alert">In order for a gallery to appear in the list, it first needs to be created. See the section on <b>Creating A Gallery</b> for more information.</div><div class="note">All Gallery type project formats will display their media content as a slider.</div>
+<h1><a name="sec9_0">9</a> Creating Pages<a class="top" href="#toc">top</a></h1>The Form theme features several different page templates for you to choose from. Each of these templates has a different configuration of options. These templates and their associated options are explained here below.<div class="note">Some of the pages in this theme are made up of a flexible arrangement of independent sections. These pages are more complex than the standard pages made using a page template. Hence these types of pages are created using the &quot;Content Builder&quot; template. The options associated with this page type will be explained in a section below entitled &quot;<b>Content Builder</b>&quot;.</div><b>To Create a Page:</b>
+<br/>
+<ol style="list-style-type: decimal">
+	<li>Go to Pages&gt;Add New in the main admin menu.<br/>
+	</li>
+	<li>Give the page a title (This will appear at the top of the page in the browser)<br/>
+	</li>
+	<li>Enter some content for the page <i>shortcodes are supported</i>.<br/>
+	</li>
+	<li>Select which page template to use for this page. See above for an explanation of the page templates which are available in the Form theme.<br/>
+	</li>
+	<li>In the sidebar box select what sidebar you would like to use for this page. For sidebars to appear in this list you first have to <i>create them in the Form theme options</i> and add some widgets. (Some page templates do not support sidebars and hence this box will not appear)<br/>
+	</li>
+	<li>Depending on which page template you have chosen the final few steps will differ. So we will now look at these steps on a template by template basis.</li>
+</ol>
+<div class="alert">Most of the page templates are self explanatory. Once selected their custom options appear and can be set/filled. There are a few which are a bit more complex and these will be dealt with in detail below. </div>
+<br/>
+<br>
+<h2><a name="sec9_1">9.1</a> Page template: Common Options</h2>
+<br/>
+Each page has the following common options.<br/>
+<br>
+<table><tr><td class="option">Background Image</td><td class="value">This is the image which is displayed in the page&#39;s full width header splash area.<td></tr><tr><td class="option">Alternate Splash</td><td class="value">By default the full width splash area on each page automatically get the title of the page in large white writing. If you would like to enter a custom message into this area, you can set this option to YES and the following options will appear below.<td></tr><tr><td class="option">Splash Title</td><td class="value">This will be an alternate title (large text)<td></tr><tr><td class="option">Splash Subtitle</td><td class="value">This will be a subtitle (small text) displayed above the splash title.<td></tr><tr><td class="option">Button URL</td><td class="value">An optional button can be displayed in this section also. The destination URL for this button would be entered here. Leave empty to hide the button.<td></tr><tr><td class="option">Button Text</td><td class="value">This would be the text label for the button.<td></tr><tr><td class="option">Open in a new window</td><td class="value">This options determines if, when the button is clicked, its destination url opens in a new window/tab or in the current window/tab.<td></tr></table><b>Footer Options</b>
+These options are used to define what section of the site&#39;s footer are shown in this page. These section are setup in the theme options &gt; footer options.<br/>
+<br>
+<table><tr><td class="option">Display Logos</td><td class="value">Choose whether the logos are displayed on this page&#39;s footer.<td></tr><tr><td class="option">Display Call to Action</td><td class="value">Choose whether the call to action section is shown on this page&#39;s footer.<td></tr></table>
+<h2><a name="sec9_2">9.2</a> Page template: Default Template</h2>
+<br/>
+This page template is the standard page. Editor content inserted in this page template will display immediately underneath the page title. There are no additional options available in this page.<br/>
+<h1><a name="sec10_0">10</a> Content Builder<a class="top" href="#toc">top</a></h1>This page template is used to create a page layout which is made up of a flexible arrangement of one or more independent modules. Basically all pages in this theme are made using the content builder, except those which are custom post types, such as galleries, projects and blog posts themselves.<br/>
+<br>
+This builder component consists of blocks, which can be inserted as required. The following blocks and options are available in this builder.<br/>
+<br>
+<br/>
+<h2><a name="sec10_1">10.1</a> Services Block</h2>
+<br/>
+This block is used to insert a services section into a the page. Services section have 3 possible layouts. These are as follows:<br/>
+<br>
+<b>Default</b> - This is a half and half layout. The left side of the block is filled with an image while the right side consists of a title, description and then a 2 column list of separate individual services. Each of these services consists of an icon, title and text description.<br/>
+<b>Alternative</b> - This layout is similar to the half and half default layout. The only difference is that the individual services are rendered as a single column list rather than a 2 column layout.<br/>
+<b>Video</b> - This services layout consists of a full width section with a video background. Superimposed on this video is a 4 column list of services below a main title and description. Each service is made up of an icon  title and description as in the other 2 layouts.<br/>
+<br>
+The options available in this block are as follows:<br/>
+<br>
+<table><tr><td class="option">Layout</td><td class="value">This is the 3 available layouts of this block, described above.<td></tr><tr><td class="option">Title</td><td class="value">Enter here the title for this section<td></tr><tr><td class="option">Content</td><td class="value">Enter the text introduction for this section, displayed under the title.<td></tr><tr><td class="option">Image</td><td class="value">Upload the image to be used in all layouts except the video option.<td></tr><tr><td class="option">YouTube Video</td><td class="value">Enter the YouTube video link for the background to be shown in the Video layout option. Ensure the video&#39;s link uses &quot;http&quot; and not &quot;https&quot;. If the latter is used, manually remove the trailing &quot;s&quot;.<td></tr><tr><td class="option">Button Label</td><td class="value">Enter the text label for the button shown under the services contained in this section.<td></tr><tr><td class="option">Button URL</td><td class="value">Enter the destination URL for this button.<td></tr></table>Individual Service item options:<br/>
+<br>
+<table><tr><td class="option">Icon</td><td class="value">Select the icons from the visual list of icons, which best represents your services.<td></tr><tr><td class="option">Title</td><td class="value">Set the title for your service.<td></tr><tr><td class="option">Content</td><td class="value">Enter the text description of your service here.<td></tr></table><div class="note">To add new services to the section either click the green &quot;+&quot; icon at the bottom of the services block, or click the &quot;duplicate/clone&quot; icon located at the bottom of the individual service item&#39;s options block. Using the clone option will copy the clicked service&#39;s details.</div>
+<h2><a name="sec10_2">10.2</a> Blog Block</h2>
+<br/>
+This block is used to show a blog section in the page. The following options are available to filter/determine which posts are displayed in this blog section.<br/>
+<br>
+<table><tr><td class="option">Max</td><td class="value">Set the max number of posts to show. If the paged option is set to YES, any other results found will be shown using a pager.<td></tr><tr><td class="option">Selection</td><td class="value">Manually insert posts<td></tr><tr><td class="option">Categories</td><td class="value">Filter posts by category<td></tr><tr><td class="option">Tags</td><td class="value">Filter posts by tags<td></tr><tr><td class="option">Format</td><td class="value">Filter posts by format<td></tr><tr><td class="option">Order</td><td class="value">Set post ordering in either ascending or descending order.<td></tr><tr><td class="option">Order By</td><td class="value">Choose the basis for ordering the results. Options here are as follows: None, ID, Author, Title, Date and Random.<td></tr><tr><td class="option">Paged Result</td><td class="value">Show a pager for any entries found above the max number set in the first option.<td></tr></table>
+<h2><a name="sec10_3">10.3</a> Columns Block</h2>
+<br/>
+This block is used to add columns of text to the page layout. This block has only one options.<br/>
+<br>
+<table><tr><td class="option">Layout</td><td class="value">Set here the number of columns you wish the layout to contain. Once this has been set, then you will need to add text blocks to this column block.<td></tr><tr><td class="option">Padding Top</td><td class="value">Amount of section top padding in pixels.<td></tr><tr><td class="option">Padding Bottom</td><td class="value">Amount of section bottom padding in pixels.<td></tr></table>Each text block have the following options:<br/>
+<br>
+<table><tr><td class="option">Layout</td><td class="value">Select if the text block should have a boxed or full width layout.<td></tr><tr><td class="option">Content</td><td class="value">Enter the content for this text block. Simple HTML tags are supported.<td></tr></table>
+<h2><a name="sec10_4">10.4</a> Portfolio Block</h2>
+<br/>
+Use this block to add a portfolio section (grid of projects) to the page layout. This block has the following options which may be used to filter the project displayed in this section.<br/>
+<br>
+<table><tr><td class="option">Max</td><td class="value">Set the max number of projects to be displayed in this section.<td></tr><tr><td class="option">Format</td><td class="value">Filter the projects displayed based on their format (Image, Video, Gallery)<td></tr><tr><td class="option">Paged Result</td><td class="value">If more then the max amount of projects is found, they will be displayed in a pager if this option is set to yes.<td></tr><tr><td class="option">Use Lightbox</td><td class="value">If set to yes, the project media will be opened in a lightbox once a user clicks on a thumbnails. if set to no, the single project page will be opened.<td></tr></table>
+<h2><a name="sec10_5">10.5</a> Numbers Block</h2>
+<br/>
+This block is used to insert numbers or statistics to describe anything about you or your company. Multiple numbers can be added by clicking the &quot;add number&quot; button and entering a value and description pair. These numbers are organised into a horizontal row. A single row contains 3 numbers. If more then 3 are entered, a second row is started under the first.<br/>
+<br>
+<br/>
+<h2><a name="sec10_6">10.6</a> Contact Block</h2>
+<br/>
+This block is used to insert a contact form into a page layout. The contact form consists of a title and subtitle pair, sent message and error messages and finally an optional Google Map. The following options are available in this block:<br/>
+<br>
+<table><tr><td class="option">Info</td><td class="value">The title and subtitle for the contact form may be entered here. Simple HTML tags are supported, such as heading and paragraph tags, etc.<td></tr><tr><td class="option">Mail Sent Message</td><td class="value">The Message shown when the form message has been sent without errors.<td></tr><tr><td class="option">Form Error Message</td><td class="value">The Message shown when the form message has not been sent due to errors.<td></tr><tr><td class="option">Show Google Map</td><td class="value">Whether to display Google Map in the footer or not.<td></tr><tr><td class="option">Latitude</td><td class="value">Latitudinal location for the map center. See the help documentation for a link to a utility used to convert addresses into lat/long numbers.<td></tr><tr><td class="option">Longitude</td><td class="value">Longitudinal location for the map center. See the help documentation for a link to a utility used to convert addresses into lat/long numbers.<td></tr><tr><td class="option">Zoom Level</td><td class="value">Enter the zoom level of the map upon page load. The user is then free to adjust this zoom level using the map UI<td></tr></table>
+<h2><a name="sec10_7">10.7</a> Recent Work Block</h2>
+<br/>
+This block is used to insert a recent work section into a page layout. A recent work section consists of a gallery of items which can be browser by the user/visitor by scrolling or dragging the images horizontally. A gallery custom post type is required to provide content for this block. The following options are available for this block:<br/>
+<br>
+<table><tr><td class="option">Title</td><td class="value">The title for this section.<td></tr><tr><td class="option">Content</td><td class="value">The short description for this section, which will appear beneath the title.<td></tr><tr><td class="option">Background</td><td class="value">Here an image may be uploaded which will form the background for this section.<td></tr><tr><td class="option">Gallery</td><td class="value">The gallery which will provide the contents for this section.<td></tr><tr><td class="option">Button Label</td><td class="value">The text label for an optional button displayed in this section.<td></tr><tr><td class="option">Button URL</td><td class="value">The destination for this optional button.<td></tr></table>
+<h2><a name="sec10_8">10.8</a> Testimonials</h2>
+<br/>
+This block is used to insert a section containing one or more testimonials. The testimonials are displayed in a full width slider. Each testimonial consists of a quotation text and a 2 part cite, part 1 is the cite&#39;s name and part 2 is where that quotation was sourced. The following options are available in this block:<br/>
+<br>
+<table><tr><td class="option">Title</td><td class="value">The title for the section<td></tr><tr><td class="option">Content</td><td class="value">A short description of the section which will appear below the title.<td></tr><tr><td class="option">Name</td><td class="value">The name of the person saying the quote (cite)<td></tr><tr><td class="option">Via</td><td class="value">Where has this quote been heard, said, or taken from.<td></tr><tr><td class="option">Quote</td><td class="value">This is the quotation text itself. Inverted commas are not automatically added.<td></tr></table>Additional testimonials need to be added by clicking the green &quot;+&quot; icons at the bottom of the testimonial item block.<br/>
+<br>
+<br/>
+<h2><a name="sec10_9">10.9</a> Team Block</h2>
+<br/>
+This block is used to insert a section about company staff members. This block is almost identical to the services &quot;default&quot; layout, the only difference being that instead of an icon being presented beside the service item title, here it is the staff members title and icons are shown after the description text instead, where they represent this staff member&#39;s relevant social media profiles.<br/>
+<h1><a name="sec11_0">11</a> Theme Options<a class="top" href="#toc">top</a></h1>In this section we will explain the custom options that come with the Form theme, where to find them and what you would use them for.<br/>
+<br>
+Form&#39;s custom theme options can be found at <i>Appearance &gt; Theme Options</i>. These options will appear once the Form theme has been successfully installed. The various options are organized into vertical tabs on the left side. Simply click on a tab to show its contents in the main content area.<div class="note">In the admin panel itself, beside each option, you will see a short description of what that particular options does. In most cases these short descriptions will be enough to explain how to use the custom options found in this theme. Nonetheless all options are explained here below.</div>
+<h2><a name="sec11_1">11.1</a> General Options</h2>
+<br/>
+General options usually with a global or site wide effect. This tab is open by default when this page is loaded.<br/>
+<br>
+<table><tr><td class="option">Import Demo Content</td><td class="value">This option allows you to import ready made content for the theme to make it look like the theme&#39;s online demo site. See the theme setup section for more information.<td></tr><tr><td class="option">Logo</td><td class="value">This is the logo for the whole site and appears in the top left corner - Replace with your own logo in .png format.<td></tr><tr><td class="option">Header Image</td><td class="value">Enter the background image for the site header. This is the global site header background image. It can be over written using the background image option in all individual posts , projects, pages. This image will be used if those options are left empty.<td></tr><tr><td class="option">Favicon</td><td class="value">This is the favicon or bookmark icon for the website, replace with your own 16x16px icon.<td></tr><tr><td class="option">Custom CSS</td><td class="value">This field allows the insertion of custom CSS selectors. This is required if you wish to change some aspect of the theme&#39;s default CSS. CSS selectors inserted here will overwrite those in the theme&#39;s default CSS. Note: For notes on how to find the CSS selector of the element you wish to change, please refer to the section entitled &quot;Custom CSS&quot;<td></tr><tr><td class="option">Custom JS</td><td class="value">This field is used to add custom javascript to the theme. For example this field would be used to add Google Analytics tracking code to the theme.<td></tr></table>
+<h2><a name="sec11_2">11.2</a> Color Options</h2>
+<br/>
+This tab controls the color(s) of the theme. You can reset the options to the original color at any time by clicking &quot;Restore Default&quot; link just below the input field.<br/>
+<br>
+<table><tr><td class="option">Primary Color</td><td class="value">Using the color picker, set the primary color of the theme.<td></tr></table>
+<h2><a name="sec11_3">11.3</a> Font Options</h2>
+<br/>
+In this tab you can specify Google Web Typefaces to be used in various parts of the theme.For each elements listed below you can choose any front from the Google Web Font library. Once you have chosen a font from the list, you will see a preview of this font immediately beneath the list box. Icons will appear on the right hand side of the preview. These icons indicate what font weights are available for that chosen typeface. The Icons are as follows:<br/>
+<br>
+<ol style="list-style-type: decimal">
+	<li><b>R</b> -- Regular<br/>
+	</li>
+	<li><b>B</b> -- Bold<br/>
+	</li>
+	<li><b>I</b> -- Italics<br/>
+	</li>
+	<li><b>BI</b> -- Bold Italics</li>
+</ol>
+When deciding what font to use, ensure that the chosen font contains the font weight required by the element in the theme, where it is being applied. For example, All main headings are bold, so you need to select a new font for these elements which supports a bold font weight. If you select a font which does not have a bold icon, the font will not be applied. 
+<br/>
+<br>
+The full list of available fonts and their respective weights can be seen in the <a href="http://www.google.com/webfonts" rel="nofollow">Google Web Font Library</a>
+<br/>
+<br>
+<br/>
+<br>
+<h2><a name="sec11_4">11.4</a> Footer Options</h2>
+<br/>
+<table><tr><td class="option">Email Address</td><td class="value">Enter the email address to show in the theme footer. This address will be used for the contact form in the theme.<td></tr><tr><td class="option">Phone Number</td><td class="value">Enter the phone number to show in the theme footer<td></tr><tr><td class="option">Address</td><td class="value">Enter the address to show in the theme footer<td></tr><tr><td class="option">Address Link</td><td class="value">Enter the url to visit when the address is clicked<td></tr><tr><td class="option">Copyright</td><td class="value">Here the copyright notice of the website is inserted. Simple HTML is supported.<td></tr><tr><td class="option">Social Profile Links</td><td class="value">Enter links to social media profiles. Click the &quot;Add Social Link&quot; button and a pair of field will appear below the button. The first field is the name of all available social network icons, just choose one using the drop menu, while the second field is a url field where you can enter the link to your profile.<td></tr><tr><td class="option">Logos Gallery</td><td class="value">Select the gallery to provide content to the logos area in the theme footer<td></tr><tr><td class="option">Call To Action Title</td><td class="value">Enter the text title of the call to action section<td></tr><tr><td class="option">Call To Action Subtitle</td><td class="value">Enter the subtitle for this section<td></tr><tr><td class="option">Call To Action Button 1 Text</td><td class="value">Enter the text label for the first button in this section<td></tr><tr><td class="option">Call To Action Button 1 Link</td><td class="value">Enter the destination url for the first button in this section<td></tr><tr><td class="option">Call To Action Buttons Separator</td><td class="value">Enter the word or symbol which will separate the buttons, eg. &amp;, or<td></tr><tr><td class="option">Call To Action Button 2 Text</td><td class="value">Enter the text label for the second button in this section<td></tr><tr><td class="option">Call To Action Button 2 Link</td><td class="value">Enter the destination url for the second button in this section<td></tr></table>
+<h2><a name="sec11_5">11.5</a> Contact Form Options</h2>
+<br/>
+<table><tr><td class="option">Subject Line</td><td class="value">Enter a custom subject line which will appear on all email sent from the contact form. This is useful when setting up email filters<td></tr></table>
+<h2><a name="sec11_6">11.6</a> Widget Areas Options</h2>
+<br/>
+This tab controls the creation of widget areas in the theme. The Form theme supports widgetized sidebars. This theme also supports unlimited widgetized areas, this means that any post can display a different sidebar. Each sidebar&#39;s contents can be unique.<br/>
+<br>
+<table><tr><td class="option">Widget Areas</td><td class="value">Create new sidebar widget area for use in the theme. Once the widget area has been created, it will be available on the <b>Appearance &gt; Widgets</b> page where you can add widgets to it.<td></tr></table>
+<h2><a name="sec11_7">11.7</a> Advanced Options</h2>
+<br/>
+This section controls a few more advanced options for the theme. These options would only concern the more advanced users.<br/>
+<br>
+<table><tr><td class="option">Javascript Compression</td><td class="value">This instructs the theme to use a compressed version of the javascript source code required by this theme. Using the compressed javascript speeds up the loading of the theme&#39;s pages.<td></tr><tr><td class="option">CSS Compression</td><td class="value">This instructs the theme to use a compressed version of the CSS stylesheets required by this theme. Using the compressed CSS speeds up the loading of the theme&#39;s pages.<td></tr><tr><td class="option">Show Thumbnails</td><td class="value">If set to &quot;Yes&quot;, featured image thumbnails (if inserted) are shown in the post list view in the WordPress default admin post list - <i>Posts&gt;All Posts</i>. This simply makes it easier to recognise posts based on their featured images as opposed to their titles.<td></tr></table><div class="note">The only reason for disabling the &quot;CSS/JS Compression&quot; options would be if you wished to make significant changes to the CSS or Javascript sources for this theme. For minor CSS and Javascript changes to the theme, the <i>Custom CSS/JS</i> fields in the <i>General</i> Theme options tab (See above), should be sifficient.</div>
+<h2><a name="sec11_8">11.8</a> Branding Options (Hidden)</h2>
+<br/>
+These options allow our buyers to rebrand the custom admin panel with their own logo and link. These options are hidden by default. See the section on <b>Branding The Admin Panel</b> later in this documentation for more information. 
+<br/>
+<table><tr><td class="option">Custom Admin Panel Logo</td><td class="value">Upload a logo to be used as the branding of the admin panel<td></tr><tr><td class="option">Custom Admin Panel Url</td><td class="value">Attach a link to this new logo<td></tr></table><div class="note">When changing any settings in the theme options panel, always remember to save those changes before navigating away from the page. To do this simply click &quot;Save All Changes&quot; button at the bottom of the options page.</div>
+<h1><a name="sec12_0">12</a> Widgetized Areas &amp; Inserting Widgets<a class="top" href="#toc">top</a></h1><div class="note">If you have imported the demo content supplied with this theme, then this setup will be already done. In which case you may only need to modify things. However we still recommend that you read this section carefully because it contains important information which will be useful during modification of the imported widget configuration.</div>The Form theme features support for unlimited widget area. There is 1 widgetized areas in this theme: The sidebar. Because of the unlimited widget area support in this theme, you can insert a unique sidebar into each and every page which used the &quot;Blog&quot; page template. This is very easy to setup and you will be taken through this process in the rest of this section.<div class="note">Please note once a sidebar is assigned to a blog page, all posts on that blog page will display the same sidebar. There is no option to specify a different sidebar on a post by post basis.</div>
+<h2><a name="sec12_1">12.1</a> Creating A Widgetized Area</h2>
+<br/>
+<ol style="list-style-type: decimal">
+	<li>Go to Appearance &gt; Theme Options in main menu<br/>
+	</li>
+	<li>Select the <i>Widget Areas</i> tab<br/>
+	</li>
+	<li>Enter a title for your new widget area, click Add New and your widget area will appear in the table below the input field.<br/>
+	</li>
+	<li>Save your changes</li>
+</ol>
+<br/>
+<h2><a name="sec12_2">12.2</a> Inserting Widgets</h2>
+<br/>
+<ol style="list-style-type: decimal">
+	<li>Go to Appearance &gt; Widgets in the main menu<br/>
+	</li>
+	<li>On the right side of this page you will see the available widget areas.If you have not imported the demo content you will see 1 widget areas created when you install the Form theme: the <b>Default</b> sidebar widget area.<br/>
+	</li>
+	<li>These widget areas will be empty and so will appear minimized.<br/>
+	</li>
+	<li>Widgets, once added to the sidebar will expand so that you can fill in the various options associated with that specific widget.<br/>
+	</li>
+	<li>Once you have completed the widget options, click <i>Save</i> and then &quot;close&quot; to minimize the widget.</li>
+</ol>
+<br/>
+<h2><a name="sec12_3">12.3</a> Placing Your widgetized Area Into The Theme</h2>
+<br/>
+Once you have filled your widget area with your desired widgets, you will still need to tell the theme on which posts you would like to display this widget area. To do this see the following:<br/>
+<br>
+<b>To Insert The Widget Area as a Sidebar:</b>
+<br/>
+<ol style="list-style-type: decimal">
+	<li>On some pages you will see on the right hand side below the &quot;tags&quot; box, an additional content boxes entitled <b>Sidebar</b>.<br/>
+	</li>
+	<li>This boxes allow you to select which widget area is to be used specifically on that post for the sidebar. This may be different for each and every page template. Some templates do not support sidebars, in this case no sidebar selection box will appear on that page.</li>
+</ol>
+<br/>
+<h1><a name="sec13_0">13</a> The Main Menu<a class="top" href="#toc">top</a></h1>The Form theme contains 1 menu locations, the <b>Main Menu</b>. This menu does not support any sub levels of menu items. In this section we will outline the steps involved in creating the menu for this theme.<br/>
+<br>
+<br/>
+<br>
+<h2><a name="sec13_1">13.1</a> Creating A Menu</h2><div class="note">Before you create your menu for this theme, make sure your pages/sections have been created already. This way they will be available to be inserted into the menu.</div><ol style="list-style-type: decimal">
+	<li>Go to Appearance&gt; Menus in the main admin menu.<br/>
+	</li>
+	<li>At first you will probably need to add a menu, give it a name &amp; click <i>Create Menu</i>. The new menu will appear in a tab in this location. Click on this tab to begin adding menu items.<br/>
+	</li>
+	<li>Use the dialog boxes on the left hand side of the page to add items to your menu. Select the item you wish to add and click &quot;Add to Menu&quot;.<br/>
+	</li>
+	<li>Now you can drag the newly inserted menu item to their correct sequence and rename their titles if required. 
+	</li>
+	<li>After you have added and edited the menu items click <i>Save Menu</i> in the bottom of this area.</li>
+</ol>
+<div class="note">If you have imported demo content supplied with this theme, then this menu will already be made however it may still need to be saved again before working correctly, to do this click &quot;Save Menu&quot;.</div>
+<h2><a name="sec13_2">13.2</a> Adding The Menu To the Theme</h2>
+<br/>
+Finally you will need to specify the location for this menu. As mentioned above, the Form theme contains 1 possible menu location; the Main Menu.<br/>
+<br>
+<br/>
+<b>To assign the Main Menu</b>
+<br/>
+<br>
+<ol style="list-style-type: decimal">
+	<li>Go to Appearance&gt; Menus in the main admin menu.<br/>
+	</li>
+	<li>At the top left of that page you will see a panel titled <i>Theme Locations</i>
+	</li>
+	<li>Here there will be a select box under the two available locations in the Form theme.These select boxes will hold a list of all created menus.<br/>
+	</li>
+	<li>so select the menu you wish to place in the Main Menu location from the drop down and then click <i>Save</i>.</li>
+</ol>
+<br/>
+<h1><a name="sec14_0">14</a> Shortcodes<a class="top" href="#toc">top</a></h1>This theme contains several useful shortcodes. These are basically helper codes which can be inserted into the default WordPress editor and when the page is rendered they will become full elements. The type of element depends on the type of shortcode used. Shortcodes are available for inserting videos buttons and columns. In this section we will list these available shortcodes and the properties or parameters associated with each one. 
+<br/>
+To insert a shortcode simply click the <i>Insert Shortcode</i> button in the toolbar area of the default WordPress editor.<br/>
+<br>
+<img src="shots/Shortcode Button.png" alt="[Shortcode%20Button.png]" title="" />
+<b>^ The Shortcode Icon seen above in blue &quot;SC&quot; on right end of the icons in the toolbar.</b><div class="note">It should be noted that it is not sufficient to copy and paste a shortcode&#39;s short syntax from one page/post/theme&#39;s editor window to another. To be inserted correctly each shortcode needs to be inserted using the shortcode editor. If this process is not followed, the page will not render correctly and the layout will not look as expected.</div><b>To Add a Shortcode do the following:</b>
+<ol style="list-style-type: decimal">
+	<li>Position the cursor in the editor in the specific position where you wish to place the shortcode or element.<br/>
+	</li>
+	<li>Click the Shortcode button to open the shortcode editor/manager dialog (see image above for this button&#39;s location.<br/>
+	</li>
+	<li>Select the desired shortcode type from the dropdown list 
+	</li>
+	<li>Fill in all of the required parameters for that shortcode<br/>
+	</li>
+	<li>When you are ready, click <i>Insert Shortcode</i> the editor will then close and you will see the shortcode appear in the editor window.</li>
+</ol>
+<br/>
+<h2><a name="sec14_1">14.1</a> Shortcode - Button</h2>
+<br/>
+Use this shortcode to insert a button.<br/>
+<br>
+<table><tr><td class="option">Url</td><td class="value">Url a button will link to<td></tr><tr><td class="option">Text</td><td class="value">Text displayed inside the button<td></tr><tr><td class="option">Open in new window</td><td class="value">Should link be opened in new window or not<td></tr><tr><td class="option">Color</td><td class="value">Select between two color modes, dark and light, based on the background you are putting them on.<td></tr><tr><td class="option">Center Button</td><td class="value">If set to Yes, the button will be centered within its container, otherwise the button will got with the natural flow of the layout in which its placed.<td></tr></table>
+<h2><a name="sec14_2">14.2</a> Shortcode - Columns</h2>
+<br/>
+Use this shortcode to create a column based layout for your content. When creating column based layouts using this shortcode, keep in mind that on smaller resolutions all column based layouts will become narrower before collapsing to a single column in the mobile resolution.<br/>
+<br>
+<table><tr><td class="option">Layout</td><td class="value">Choose layout for columns. Chosen layout&#39;s width ratio is visually displayed below selector.<td></tr></table>
+<h2><a name="sec14_3">14.3</a> Shortcode - Video</h2>
+<br/>
+Use this shortcode to insert videos into the post or page content areas. YouTube and Vimeo Videos are the only supported video types. For Videos to appear in the drop list, they first need to be created in the Video custom post type. See the Creating Video Items section.<br/>
+<br>
+<table><tr><td class="option">Use Video</td><td class="value">Select the video from the drop list which you would like to insert.<td></tr></table>
+<h1><a name="sec15_0">15</a> Fonts<a class="top" href="#toc">top</a></h1>The Form theme uses Google web fonts by default. These fonts are as follows:<br/>
+<br>
+<table><tr><td class="option">General Font</td><td class="value">Lato (Sans Serif)<td></tr><tr><td class="option">Heading Font</td><td class="value">Montserrat (Sans Serif)<td></tr></table>If you wish to make changes to these fonts you have the following options:<br/>
+<br>
+<ol style="list-style-type: decimal">
+	<li>Use the Custom CSS box in the Theme options to insert new fonts into the theme manually with CSS.<br/>
+	</li>
+	<li>Insert any Google Web font using the &quot;Fonts&quot; tab in the theme options. See the Theme Options section for an explanation of the options in this tab. The section is entitled <b>Google Font Options</b>
+	</li>
+	<li>The Fonts Tab also allows advanced users to specify new fonts, line heights, sizes etc. See that page for more info.</li>
+</ol>
+<br/>
+<h1><a name="sec16_0">16</a> Theme Translation<a class="top" href="#toc">top</a></h1>The only method to translate this theme is Using a POT file.<br/>
+<br>
+A POT file is a simple method but it is designed to basically translate the theme&#39;s static text content into one other language. For example this would be used when the theme was designed to be used in English, but your website will be in Italian or another language, and you would like to translate all the parts of the theme which are not the content you will be writing. This would included back end translation such as admin field names, descriptions etc, as well as front end static text which is visible to the visitor. These front end items would included things like contact from field names, comment section titles, other titles which appear automatically rather then being actually entered by you. This method is not designed to handle language switching in your website. If you require this more advanced functionality, you will need to use a plugin. No specific plugins have been tested with this theme, and hence we cannot guarantee that they will work.<br/>
+<br>
+<br/>
+<h2><a name="sec16_1">16.1</a> Translation Using POT File</h2>
+<br/>
+To translate the theme using the POT file do the following:<br/>
+<br>
+<ol style="list-style-type: decimal">
+	<li>Create a po file for your language, for example <b>de_DE.po</b>
+	</li>
+	<li>Copy all text from provided theme pot file into your po file<br/>
+	</li>
+	<li>Edit the po file with <b>poedit</b> <a href="http://www.poedit.net/" rel="nofollow">http://www.poedit.net/</a>
+	</li>
+	<li>Create the mo file<br/>
+	</li>
+	<li>edit <i>wp-config.php</i> file in your installation and set <b>WPLANG</b> so it matches your languages: <b>define(&#39;WPLANG&#39;, &#39;de_DE&#39;);</b>
+	</li>
+	<li>The Theme should now display all messages in your language.</li>
+</ol>
+<div class="alert"><b>BACKUP YOUR LANGUAGE PO/MO FILES</b> 
+Upon theme update, language files are <b>NOT</b> preserved. 
+You will need to manually restore your po/mo files right after the update.</div>
+<br/>
+<br>
+<br/>
+<br>
+<h2><a name="sec16_2">16.2</a> Modifying The theme&#39;s CSS</h2>
+<br/>
+The Custom CSS field provided in the Form theme&#39;s theme options panel should be used for making changes to the theme&#39;s CSS styles. This can be found in <i>Appearance&gt;Theme Options&gt;General&gt;Custom CSS</i>.<br/>
+<br>
+<br/>
+<b>To overwrite an elements CSS styles:</b>
+<br/>
+<ol style="list-style-type: decimal">
+	<li>Locate the element&#39;s CSS selector using firebug or chrome&#39;s element inspector.<br/>
+	</li>
+	<li>Copy this selector and paste it into the Custom CSS Field found in the theme&#39;s custom options &quot;General&quot; tab.<br/>
+	</li>
+	<li>Add your new styles and you are done.<br/>
+	</li>
+	<li>Click Save All Changes at the bottom of the theme options page.<br/>
+		<br/>
+		Now the theme&#39;s default CSS will be overwritten by what you have entered into the Custom CSS box.</li>
+</ol>
+<br/>
+<h1><a name="sec17_0">17</a> Javascript<a class="top" href="#toc">top</a></h1>
+<h2><a name="sec17_1">17.1</a> Adding Custom Javascript</h2>
+<br/>
+Similar to the Custom CSS filed in the theme options, there is also a Custom Javascript field to be used when you wish to insert additional javascript into the theme. The only difference with this field is that the javascript code placed here will not overwrite any existing javascript code. An example of custom javascript code which would be used in this field is Google Analytics. Simply paste in the javascript code provided by Google in this box, save and you&#39;re done.<br/>
+<h1><a name="sec18_0">18</a> Rebranding the Custom Admin Panel<a class="top" href="#toc">top</a></h1>As many of our buyers are buying our themes in order to sell to their clients, we have decided to aid this process by designing our theme&#39;s custom admin panel to be easily rebranded. Our theme&#39;s custom options panel contains a secret option which allows our buyers to rebrand the admin panel with their logo and and afterwards these options disappear. This allows our buyers who provide their clients with themes which strengthen their brand identity with their clients and which don&#39;t force cross links to the pixelentity brand.<br/>
+<br>
+<img src="shots/branding.jpg" alt="[branding.jpg]" title="" data-spots="1:100:290,2:206:429,3:520:295,4:520:464" />
+<br/>
+<b>To rebrand the admin panel do the following:</b>
+<br/>
+<ol style="list-style-type: decimal">
+	<li>Navigate to the theme options page. <i>Appearance &gt; Theme Options</i> <div class="hotspot-link">1</div>
+	</li>
+	<li>In the browser address bar, add the following query string to the end of the existing url and hit enter.<div class="highlight"><pre><span class="o">&amp;</span><span class="nt">branding</span><span class="o">=</span><span class="nt">1</span>
+		</pre></div>
+	</li>
+	<li>A new tab will appear in the Theme Options page named <i>Branding</i> <div class="hotspot-link">2</div> The contents of this tab is shown in the above screenshot.<br/>
+	</li>
+	<li>Here <div class="hotspot-link">3</div> you can set an image to be used as the logo/ branding for the custom admin panel. You can also set a custom url which will be attached to the logo image.<br/>
+	</li>
+	<li>To see the changes, click save <div class="hotspot-link">4</div> remove the query string from the url and reload the page.<br/>
+	</li>
+	<li>The branding tab should now be hidden again and the new logo visible.</li>
+</ol>
+See a video of this process--&gt; <a href="http://www.youtube.com/watch?v=uGv0xr87ns4" rel="nofollow">REBRANDING THE ADMIN PANEL VIDEO</a>
+<h1><a name="sec19_0">19</a> Updates<a class="top" href="#toc">top</a></h1><b>FOR DETAILS OF UPDATES TO THIS THEME PLEASE REFER TO THE CHANGE LOG AT THE BOTTOM OF THE ITEM&#39;S DESCRIPTION PAGE ON THEMEFOREST.</b>
+</div>
+		
+		
+		<!--footer section-->
+		<div class="footer">
+			<div class="outro">
+				
+				<!--useful links section-->
+				<div class="links">
+					<span>USEFUL LINKS</span>
+					<ul>
+						<li><a href="http://support.pixelentity.com">Support Forums</a> The fastest way to get help</li>
+						<li><a href="http://pixelentity.com">Pixelentity.com </a> Free PSD Design Resources</li>
+						<li><a href="http://themeforest.net/user/pixelentity/follow">Follow Pixelentity</a> Add our items to your homepage.</li>
+						<li><a href="http://themeforest.net/user/pixelentity/follow">Pixelentity on Twitter</a> Get informed of new releases & updates</li>	
+					</ul>
+				</div>
+				
+				<!--getting support section-->
+				<p class="tagline"><span>STILL NEED HELP? - GETTING SUPPORT</span>If having read through all of the information in this page you are still experiencing problems, feel free to contact us. We provide free support* to our buyers via our support forums <i>(See link on right)</i>. Head on over there, read the FAQs, register <i>(using your purchase code)</i> and post your question in the appropriate forum.<br/><br/> *<b>Please note that support requests will not be answered if they relate to information available on this page.</b><br/><br/>Best regards, The Pixelentity Team</p>
+				
+			</div>
+			
+			<!--copyright details-->
+			<p class="copyright">Copyright &copy 2011+ Pixelentity. All rights reserved.</p>
+			
+		</div>
+		<!--end footer section-->
+		
+    </body>
+</html>
