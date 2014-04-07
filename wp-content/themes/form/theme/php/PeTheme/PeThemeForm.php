@@ -317,6 +317,8 @@ class PeThemeForm extends PeThemeController {
 				  "LayoutModuleFormTeam",
 				  "LayoutModuleFormStaff",
 				  "LayoutModuleFormContact",
+				  // My code
+				  "LayoutModuleFormJoin",
 				  "LayoutModuleFormBlog",
 				  "LayoutModuleFormColumns",
 				  "LayoutModuleFormText"
